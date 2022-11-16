@@ -15,12 +15,6 @@ pipeline{
                                 }
                         }
                 }
-                stage('result'){
-                        steps{
-                                script{
-                                      ans.intToRoman(7)
-                                }
-                        }
-                }
+                
         }
 }
