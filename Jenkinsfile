@@ -1,5 +1,5 @@
 node('master'){
-        stages{
+        
                 stage('Pre build'){
                         parallel(
                                      a: {
@@ -18,5 +18,5 @@ node('master'){
                         
                 }
                 
-        }
+        
 }
