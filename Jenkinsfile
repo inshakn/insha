@@ -1,9 +1,25 @@
+def ans
+
 pipeline{
         agent any
         stages{
-                stage('Build'){
+                stage('Pre build'){
                         steps{
                                 echo "hello"
+                        }
+                }
+                stage('Build'){
+                        steps{
+                                script{
+                                      ans =  load "Int_to_Roman.groovy"
+                                }
+                        }
+                }
+                stage('result'){
+                        steps{
+                                script{
+                                      ans.intToRoman(7)
+                                }
                         }
                 }
         }
