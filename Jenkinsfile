@@ -1,19 +1,21 @@
-def ans
-
-pipeline{
-        agent any
+node('master'){
         stages{
                 stage('Pre build'){
-                        steps{
-                                echo "hello"
-                        }
+                        parallel(
+                                     a: {
+                                            echo "This is branch a"
+                                         },
+                                     b: {
+                                            echo "This is branch b"
+                                        }
+                                )
                 }
                 stage('Build'){
-                        steps{
+                        
                                 script{
                                       ans =  load "Int_to_Roman.groovy"
                                 }
-                        }
+                        
                 }
                 
         }
