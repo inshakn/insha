@@ -2,7 +2,7 @@ node('master'){
         
                 stage('Pre build'){
                         parallel(
-                                     Checkout: {
+                                     a: {
             
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkins-user-github', url: 'https://github.com/inshakn/insha.git']]])},
                                      b: {
