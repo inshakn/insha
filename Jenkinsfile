@@ -1,13 +1,10 @@
-node ('test-japco') {
-        stage('build'){
-            
-                echo "Inside build stage"
-            
-        }
-        
-        stage('test'){
-            
-                echo "Inside test stage"
-            
+pipleline{
+        agent any
+        stages{
+                stage('Build'){
+                        steps{
+                                echo "hello"
+                        }
+                }
         }
 }
