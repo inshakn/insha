@@ -19,7 +19,7 @@ println("78 in roman is ")
 print(a)
 
 GroovyShell shell = new GroovyShell()
-def tools = shell.parse(new File('https://github.com/inshakn/insha/blob/master/hello.groovy'))
+def tools = shell.parse(new File('/var/jenkins_home/workspace/insha_git1/hello.groovy'))
 tools.hey()
 
 
