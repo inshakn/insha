@@ -13,7 +13,8 @@ node('master'){
                 stage('Build'){
                         
                                 script{
-                                      ans =  load "Int_to_Roman.groovy"
+                                        pwd
+                                        ans =  load "Int_to_Roman.groovy"
                                 }
                         
                 }
