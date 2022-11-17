@@ -1,4 +1,4 @@
-      
+      import com.cloudbees.groovy.cps.NonCPS
 
       @NonCPS
        def intToRoman (int number) {
