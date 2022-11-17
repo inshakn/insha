@@ -1,3 +1,4 @@
+@NonCPS
 def hey()
 {
      //println(s)
