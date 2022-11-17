@@ -3,7 +3,7 @@
             sh label: "List files", script: """#!/usr/bin/env bash
             ls
             """
-        print(${list})
+        //print(${list})
         def secondFile= evaluate(new File( "hello.groovy"))
        secondFile.hey("hello")
 
