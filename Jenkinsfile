@@ -13,8 +13,10 @@ node('master'){
                 stage('Build'){
                         
                                 script{
-                                        sh 'cd ..'
+                                        def currentDir = pwd()
+                                        echo "currentDir"
                                         ans =  load "Int_to_Roman.groovy"
+                                        second_file = load "hello.groovy"
                                 }
                         
                 }
