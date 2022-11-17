@@ -1,6 +1,6 @@
-def hey(String s)
+def hey()
 {
-     println(s)
+     //println(s)
      println("Hello, this is second file")
 }
 
