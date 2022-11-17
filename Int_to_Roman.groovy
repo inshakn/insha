@@ -5,7 +5,7 @@
             """'''
         //print(${list})
        def secondFile= load "/var/jenkins_home/workspace/insha_git1/hello.groovy"
-        //secondFile.hey("hello")
+        secondFile.hey("hello")
 
        def intToRoman (int number) {
        def rom_map = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
