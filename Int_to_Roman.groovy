@@ -1,4 +1,5 @@
       // GroovyShell shell = new GroovyShell()
+        sh ls
         def secondFile= evaluate(new File( "hello.groovy"))
        secondFile.hey("hello")
 
