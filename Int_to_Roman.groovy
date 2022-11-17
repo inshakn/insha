@@ -1,10 +1,10 @@
-      // GroovyShell shell = new GroovyShell()
+      GroovyShell shell = new GroovyShell()
         //sh "ls"
             sh label: "List files", script: """#!/usr/bin/env bash
             ls
             """
         //print(${list})
-        def secondFile= evaluate(new File( "/var/jenkins_home/workspace/insha_git1/hello.groovy"))
+        def secondFile= shell.parse(new File( "/var/jenkins_home/workspace/insha_git1/hello.groovy"))
        secondFile.hey("hello")
 
        def intToRoman (int number) {
