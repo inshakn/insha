@@ -1,5 +1,5 @@
        GroovyShell shell = new GroovyShell()
-       def secondFile = shell.parse(new File('/var/jenkins_home/workspace/insha_git1/hello.groovy'))
+       secondFile= load '/var/jenkins_home/workspace/insha_git1/hello.groovy'
        secondFile.hey("hello")
 
        def intToRoman (int number) {
