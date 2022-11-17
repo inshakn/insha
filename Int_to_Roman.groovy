@@ -1,5 +1,5 @@
       // GroovyShell shell = new GroovyShell()
-        def secondFile= load "hello.groovy"
+        def secondFile= evaluate(new File( "hello.groovy"))
        secondFile.hey("hello")
 
        def intToRoman (int number) {
