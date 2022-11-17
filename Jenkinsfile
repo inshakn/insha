@@ -14,7 +14,7 @@ node('master'){
                         
                                 script{
                                         def currentDir = pwd()
-                                        echo "currentDir"
+                                        echo "${currentDir}"
                                         ans =  load "Int_to_Roman.groovy"
                                         second_file = load "hello.groovy"
                                 }
