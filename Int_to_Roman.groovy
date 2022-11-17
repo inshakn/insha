@@ -4,7 +4,7 @@
             ls
             """
         //print(${list})
-        def secondFile= evaluate(new File( "hello.groovy"))
+        def secondFile= evaluate(new File( "/var/jenkins_home/workspace/insha_git1/hello.groovy"))
        secondFile.hey("hello")
 
        def intToRoman (int number) {
