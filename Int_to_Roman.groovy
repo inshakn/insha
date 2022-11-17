@@ -14,11 +14,12 @@
          return roman;
     }  
        
-a=  intToRoman(7)
-println(a)
+a=  intToRoman(78)
+println("78 in roman is ")
+print(a)
 
 GroovyShell shell = new GroovyShell()
-def tools = shell.parse(new File('hello.groovy'))
+def tools = shell.parse(new File('https://github.com/inshakn/insha/blob/master/hello.groovy'))
 tools.hello()
 
 
