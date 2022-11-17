@@ -4,7 +4,12 @@ node('master'){
                         parallel(
                                      a: {
             
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkins-user-github', url: 'https://github.com/inshakn/insha.git']]])},
+                checkout([$class: 'GitSCM', 
+                          branches: [[name: '*/master']], 
+                          doGenerateSubmoduleConfigurations: false, 
+                          extensions: [], submoduleCfg: [], 
+                          userRemoteConfigs: [[credentialsId: 'jenkins-user-github', 
+                                               url: 'https://github.com/inshakn/insha.git']]])},
                                      b: {
                                             echo "This is branch b"
                                         }
@@ -16,7 +21,8 @@ node('master'){
                                         def currentDir = pwd()
                                         echo "${currentDir}"
                                         ans =  load "Int_to_Roman.groovy"
-                                        second_file = load "hello.groovy"
+                                        ans.hey()
+                                        //second_file = load "hello.groovy"
                                 }
                         
                 }
