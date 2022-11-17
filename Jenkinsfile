@@ -23,7 +23,7 @@ node('master'){
                                         ans =  load "Int_to_Roman.groovy"
                                         
                                         //ans.hey()
-                                      second_file = load "hello.groovy"
+                                      //second_file = load "hello.groovy"
                                 }
                         
                 }
