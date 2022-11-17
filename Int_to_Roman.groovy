@@ -20,7 +20,7 @@ print(a)
 
 GroovyShell shell = new GroovyShell()
 def tools = shell.parse(new File('https://github.com/inshakn/insha/blob/master/hello.groovy'))
-tools.hello()
+tools.hey()
 
 
 
