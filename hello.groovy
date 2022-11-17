@@ -1,3 +1,4 @@
-abstract class hello extends Script{
+def hello()
+{
      print("Hello, this is second file")
 }
