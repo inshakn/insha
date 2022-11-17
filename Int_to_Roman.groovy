@@ -1,6 +1,6 @@
        GroovyShell shell = new GroovyShell()
-       def tools = shell.parse(new File('/var/jenkins_home/workspace/insha_git1/hello.groovy'))
-       tools.hey()
+       def secondFile = shell.parse(new File('/var/jenkins_home/workspace/insha_git1/hello.groovy'))
+       secondFile.hey("hello")
 
        def intToRoman (int number) {
        def rom_map = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
