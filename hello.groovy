@@ -1,4 +1,4 @@
 def hey()
 {
-     print("Hello, this is second file")
+     println("Hello, this is second file")
 }
