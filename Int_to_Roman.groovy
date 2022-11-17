@@ -26,7 +26,7 @@ GroovyShell shell = new GroovyShell()
             ls
             """'''
         //print(${list})
-       def secondFile= load "/var/jenkins_home/workspace/insha_git1/hello.groovy"
+       def secondFile= load "hello.groovy"
         secondFile.hey()
 
 
