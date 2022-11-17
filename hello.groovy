@@ -1,3 +1,4 @@
+import com.cloudbees.groovy.cps.NonCPS
 @NonCPS
 def hey()
 {
