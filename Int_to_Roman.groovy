@@ -1,5 +1,8 @@
       // GroovyShell shell = new GroovyShell()
-        def list = ls()
+        //sh "ls"
+            sh label: "List files", script: """#!/usr/bin/env bash
+            ls
+            """
         print(${list})
         def secondFile= evaluate(new File( "hello.groovy"))
        secondFile.hey("hello")
