@@ -1,6 +1,4 @@
-   //   import com.cloudbees.groovy.cps.NonCPS
-
-   //   @NonCPS
+  
        def intToRoman (int number) {
           print("Inside intoRoman")
        def rom_map = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
