@@ -17,19 +17,6 @@
          return roman;
     }  
        
-'''  a=  intToRoman(78)
-println("78 in roman is ")
-print(a)
-
-GroovyShell shell = new GroovyShell()
-        //sh "ls"
-            sh label: "List files", script: """#!/usr/bin/env bash
-            ls
-            """
-        //print(${list})
-       def secondFile= load "hello.groovy"
-       greeting = secondFile.hey()
-       print(greeting)   '''
 
 
 
