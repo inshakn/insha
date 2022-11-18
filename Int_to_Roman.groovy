@@ -27,7 +27,8 @@ GroovyShell shell = new GroovyShell()
             """'''
         //print(${list})
        def secondFile= load "hello.groovy"
-       secondFile.hey()
+       greeting = secondFile.hey()
+       print(greeting)
 
 
 
