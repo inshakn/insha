@@ -24,7 +24,8 @@ node('master'){
                                         
                                         //ans.hey()
                                          second_file = load "hello.groovy"
-                                         second_file.intToRoman(12)
+                                         ans = second_file.intToRoman(12)
+                                         print(ans)
                                 }
                         
                 }
